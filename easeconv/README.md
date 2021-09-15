@@ -1,8 +1,8 @@
 ![NSIDC logo](../images/NSIDC_DAAC_2018_smv2.jpg)
 
 # easeconv
-
-TODO
+EASE-Grid map transformation utilities. `easeconv` is version 0.3 and was
+originally released on December 18, 2013.
 
 ## Level of Support
 
@@ -16,12 +16,15 @@ contact nsidc@nsidc.org for more information.
 
 ## Requirements
 
-TODO
+The procedures defined in this directory require the Interactive Data Language
+(IDL), which requires a license to install and use.
 
 
 ## Installation
 
-TODO
+Please see [this
+documentation](https://www.l3harrisgeospatial.com/Support/Self-Help-Tools/Help-Articles/Help-Articles-Detail/ArtMID/10220/ArticleID/23920/Install-and-License-IDL-88)
+documentation for more information on how to install IDL on your system.
 
 
 ## Usage
