@@ -29,7 +29,56 @@ documentation for more information on how to install IDL on your system.
 
 ## Usage
 
-TODO
+First, start an IDL repl (`idl`):
+
+```
+$ idl
+IDL Version 8.3 (linux x86_64 m64). (c) 2013, Exelis Visual Information Solutions, Inc.
+Installation number: xxx-xxxx.
+Licensed for use by: University of Colorado - Boulder (MAIN)
+
+IDL>
+```
+
+Next, compile `easeconv.pro` with the `.RUN` command:
+
+```
+IDL> .RUN easeconv.pro
+% Compiled module: SSMI_CONVERT.
+% Compiled module: SSMI_INVERSE.
+% Compiled module: EASE_CONVERT.
+% Compiled module: EASE_INVERSE.
+```
+
+Two main functions are defined exposed by compiling `easeconv.pro`:
+`ease_convert` and `ease_inverse`. All other functions are support routines for
+these top-level functions.
+
+### `ease_convert`
+
+The `ease_convert` function performs forward ((lat,lon) to (col,row))
+transformations for all of the supported original (spherical) EASE-Grids and the
+currently supported (wgs84 ellipsoid) EASE-Grid-2.0 grids.
+
+```
+IDL> status = ease_convert('Nl', 80, -120, r, s)
+% Compiled module: EASECONV_DEG2RAD.
+% Compiled module: EASECONV_NORMALIZE_DEGREES.
+IDL> print, status, r, s
+       0       321.63207       337.84827
+```
+
+### `ease_inverse`
+
+The `ease_inverse` function performs inverse ((col,row) to (lat,lon))
+transformations for all of the supported original (spherical) EASE-Grids and the
+currently supported (wgs84 ellipsoid) EASE-Grid-2.0 grids.
+
+```
+IDL> status = ease_convert('SModis4km', -80, -120, r, s)
+IDL> print, status, r, s
+       0       2010.2005       2388.4483
+```
 
 ## License
 
