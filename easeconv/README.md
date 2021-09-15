@@ -61,11 +61,14 @@ transformations for all of the supported original (spherical) EASE-Grids and the
 currently supported (wgs84 ellipsoid) EASE-Grid-2.0 grids.
 
 ```
-IDL> status = ease_convert('Nl', 80, -120, r, s)
+IDL> grid_name = 'Nl'
+IDL> latitude = -80
+IDL> longitude = -120
+IDL> status = ease_convert(grid_name, latitude, longitude, r, s)
 % Compiled module: EASECONV_DEG2RAD.
 % Compiled module: EASECONV_NORMALIZE_DEGREES.
 IDL> print, status, r, s
-       0       321.63207       337.84827
+       0      -78.547403       106.80454
 ```
 
 ### `ease_inverse`
@@ -75,9 +78,13 @@ transformations for all of the supported original (spherical) EASE-Grids and the
 currently supported (wgs84 ellipsoid) EASE-Grid-2.0 grids.
 
 ```
-IDL> status = ease_convert('SModis4km', -80, -120, r, s)
-IDL> print, status, r, s
-       0       2010.2005       2388.4483
+IDL> grid_name = 'Nl'
+IDL> r = -78.55
+IDL> s = 106.80
+IDL> status = ease_inverse(grid_name, r, s, lat, lon)
+% Compiled module: EASECONV_RAD2DEG.
+IDL> print, status, lat, lon
+       0      -80.011697      -120.00030
 ```
 
 ## License
