@@ -1,6 +1,7 @@
 ![NSIDC logo](../images/NSIDC_DAAC_2018_smv2.jpg)
 
-# easeconv
+# easeconv.pro
+
 EASE-Grid map transformation utilities. `easeconv` is version 0.3 and was
 originally released on December 18, 2013.
 
