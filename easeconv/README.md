@@ -55,11 +55,32 @@ Two main functions are defined exposed by compiling `easeconv.pro`:
 `ease_convert` and `ease_inverse`. All other functions are support routines for
 these top-level functions.
 
+`ease_convert` and `ease_inverse` perform forward ((lat,lon) to (col,row)) and
+inverse ((col,row) to (lat,lon)) transformations respectively for all of the
+supported original (spherical) EASE-Grids and the currently supported (wgs84
+ellipsoid) EASE-Grid-2.0 grids.
+
+* Supported original (spherical) EASE-Grids:
+    * SSM/I Polar Pathfinder: [NSM][lh]
+       (where l="low" res (25km), h="high" res (12.5km))
+    * AVHRR Polar Pathfinder: [NS]a{1,5,25}
+       (where 1=1.25 km res, 5=5 km res, 25=25 km res)
+    * TOVS-P Polar Pathfinder: NpathP (100km res)
+    * AARI sea ice: AARI or (equivalent) NAARI (12.5 km res)
+    * MODIS sea ice: [NS]Modis[14]km
+* Supported (WGS84) EASE-Grid-2.0 grids:
+    * Grid names according to the pattern "EASE2_pxx"
+      where:
+        p = projection: 'N' (north), 'S' (south), 'M' (cylindrical)
+        xx - resolution: '25km', '12.5km', '6.25km',
+             '36km', '09km', '03km', '01km' for all projections,
+             and '100km' (for N projection only)
+      Example: EASE2_M25km, EASE2_M09km, etc.
+
 ### `ease_convert`
 
-The `ease_convert` function performs forward ((lat,lon) to (col,row))
-transformations for all of the supported original (spherical) EASE-Grids and the
-currently supported (wgs84 ellipsoid) EASE-Grid-2.0 grids.
+The `ease_convert` function performs forward transformations from (lat, lon) to
+(col, row).
 
 ```
 IDL> grid_name = 'Nl'
@@ -74,9 +95,8 @@ IDL> print, status, r, s
 
 ### `ease_inverse`
 
-The `ease_inverse` function performs inverse ((col,row) to (lat,lon))
-transformations for all of the supported original (spherical) EASE-Grids and the
-currently supported (wgs84 ellipsoid) EASE-Grid-2.0 grids.
+The `ease_inverse` function performs inverse transformations from (col,row) to
+(lat,lon).
 
 ```
 IDL> grid_name = 'Nl'
