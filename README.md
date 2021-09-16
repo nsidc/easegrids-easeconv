@@ -24,7 +24,12 @@ Script installation instructions are provided in the README file within each sub
 
 ## Usage
 
-TODO
+### `easeconv`
+
+The `easeconv` directory contains IDL files that define functions used for
+performing forward ((lat,lon) to (col,row)) and inverse ((col,row) to (lat,lon))
+transformations for all of the supported original (spherical) EASE-Grids and the
+currently supported (wgs84 ellipsoid) EASE-Grid-2.0 grids.
 
 ## License
 
