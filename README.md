@@ -2,8 +2,9 @@
 
 # EASE grids: easeconv
 
-EASE-Grid map transformation utilities. `easeconv` is version 0.3 and was
-originally released on December 18, 2013.
+EASE-Grid map transformation utilities for IDL. `easeconv` is version 0.3 and
+was originally released on December 18, 2013. See the
+[`CHANGELOG.md`](./CHANGELOG.md) for complete version history.
 
 
 ## Level of Support
