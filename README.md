@@ -27,7 +27,7 @@ The procedures defined in this directory require the Interactive Data Language
 
 Please see [this
 documentation](https://www.l3harrisgeospatial.com/Support/Self-Help-Tools/Help-Articles/Help-Articles-Detail/ArtMID/10220/ArticleID/23920/Install-and-License-IDL-88)
-documentation for more information on how to install IDL on your system.
+for more information on how to install IDL on your system.
 
 
 ## Usage
