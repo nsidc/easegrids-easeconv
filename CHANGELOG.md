@@ -1,7 +1,6 @@
-# 2021-09-15
+# 2021-09-20
 
-Moved `easeconv` code into this Github repository
-(`easegrids-geolocate-conversion-lookup`)
+Moved `easeconv` code into this Github repository (`easegrids-easeconv`).
 
 # Release 0.3: 2013-12-18
 
