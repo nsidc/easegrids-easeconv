@@ -28,19 +28,6 @@
 ;
 ;       will return status of 0 and cols = 720, rows = 720
 ;
-;-
-; 2011-10-04 M. J. Brodzik brodzik@nsidc.org 303-492-8263
-; $Revision: 19559 $
-;
-; Copyright 2011 Regents of the University of Colorado. The Regents of the
-; University of Colorado grants, and you accept, a personal, nonexclusive,
-; nontransferable license to use this software, at no charge, in
-; accordance with the terms herein, solely for internal research and
-; development, which is limited to testing, measuring, assessing,
-; evaluating the software and/or data that you generate using this
-; software, and not for any commercial purpose. You may not develop
-; derivative works based on this software, or redistribute this software.
-;
 function ease2_grid_info, grid, $
                           PROJECTION=projection, $
                           MAP_SCALE_M=map_scale_m, $

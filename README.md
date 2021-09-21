@@ -125,3 +125,5 @@ See [Code of Conduct](CODE_OF_CONDUCT.md).
 
 This software was developed by the NASA National Snow and Ice Data Center
 Distributed Active Archive Center.
+
+Author: M.J. Brodzik,  2011

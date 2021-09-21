@@ -39,19 +39,6 @@
 ;
 ;       will return status of 0 and lat0=90.0D and lon0=0.0D
 ;
-;-
-; 2011-10-05 M. J. Brodzik brodzik@nsidc.org 303-492-8263
-; $Revision: 19559 $
-;
-; Copyright 2011 Regents of the University of Colorado. The Regents of the
-; University of Colorado grants, and you accept, a personal, nonexclusive,
-; nontransferable license to use this software, at no charge, in
-; accordance with the terms herein, solely for internal research and
-; development, which is limited to testing, measuring, assessing,
-; evaluating the software and/or data that you generate using this
-; software, and not for any commercial purpose. You may not develop
-; derivative works based on this software, or redistribute this software.
-;
 function ease2_map_info, projection, $
                          MAP_EQUATORIAL_RADIUS_M=map_equatorial_radius_m, $
                          MAP_ECCENTRICITY=map_eccentricity, $

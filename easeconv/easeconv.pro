@@ -3,20 +3,6 @@
 ;                equal-area cylindrical grid coordinates; Supports
 ;                original EASE-Grids and EASE-Grid-2.0 (WGS ellipsoid)
 ;
-; 1992-01-30 H. Maybee Original Author
-; Maintenance contact: M. J. Brodzik brodzik@nsidc.org 303-492-8263
-;
-; $Revision: 19585 $
-;
-; Copyright 2011 Regents of the University of Colorado. The Regents of the
-; University of Colorado grants, and you accept, a personal, nonexclusive,
-; nontransferable license to use this software, at no charge, in
-; accordance with the terms herein, solely for internal research and
-; development, which is limited to testing, measuring, assessing,
-; evaluating the software and/or data that you generate using this
-; software, and not for any commercial purpose. You may not develop
-; derivative works based on this software, or redistribute this software.
-;
 ;==========================================================================
 
 ;+
