@@ -32,9 +32,10 @@ for more information on how to install IDL on your system.
 
 ## Usage
 
-First, start an IDL repl (`idl`):
+First, `cd` to the `easeconv` directory and start an IDL repl (`idl`):
 
 ```
+$ cd easeconv/
 $ idl
 IDL Version 8.3 (linux x86_64 m64). (c) 2013, Exelis Visual Information Solutions, Inc.
 Installation number: xxx-xxxx.
@@ -43,15 +44,18 @@ Licensed for use by: University of Colorado - Boulder (MAIN)
 IDL>
 ```
 
-Next, compile `easeconv/easeconv.pro` with the `.RUN` command:
+Next, compile `easeconv.pro` with the `.RUN` command:
 
 ```
-IDL> .RUN easeconv/easeconv.pro
+IDL> .RUN easeconv.pro
 % Compiled module: SSMI_CONVERT.
 % Compiled module: SSMI_INVERSE.
 % Compiled module: EASE_CONVERT.
 % Compiled module: EASE_INVERSE.
 ```
+
+NOTE: if you get a 'file not found' or 'Variable is undefined' error, make sure
+you are in the `easeconv` directory before compiling `easeconv.pro`!
 
 Two main functions are defined exposed by compiling `easeconv.pro`:
 `ease_convert` and `ease_inverse`. All other functions are support routines for
@@ -86,13 +90,13 @@ The `ease_convert` function performs forward transformations from (lat, lon) to
 
 ```
 IDL> grid_name = 'Nl'
-IDL> latitude = -80
+IDL> latitude = 80
 IDL> longitude = -120
 IDL> status = ease_convert(grid_name, latitude, longitude, r, s)
 % Compiled module: EASECONV_DEG2RAD.
 % Compiled module: EASECONV_NORMALIZE_DEGREES.
 IDL> print, status, r, s
-       0      -78.547403       106.80454
+       0       321.63207       337.84827
 ```
 
 ### `ease_inverse`
@@ -102,12 +106,12 @@ The `ease_inverse` function performs inverse transformations from (col,row) to
 
 ```
 IDL> grid_name = 'Nl'
-IDL> r = -78.55
-IDL> s = 106.80
+IDL> r = 321.63
+IDL> s = 337.85
 IDL> status = ease_inverse(grid_name, r, s, lat, lon)
 % Compiled module: EASECONV_RAD2DEG.
 IDL> print, status, lat, lon
-       0      -80.011697      -120.00030
+       0       79.999791      -119.99672
 ```
 
 
