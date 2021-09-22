@@ -32,7 +32,7 @@ for more information on how to install IDL on your system.
 
 ## Usage
 
-First, `cd` to the `easeconv` directory and start an IDL repl (`idl`):
+First, `cd` to the `easeconv` directory and start an IDL session (`idl`):
 
 ```
 $ cd easeconv/
