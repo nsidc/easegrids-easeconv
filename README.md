@@ -54,6 +54,9 @@ IDL> .RUN easeconv.pro
 % Compiled module: EASE_INVERSE.
 ```
 
+NOTE: if you get a 'file not found' or 'Variable is undefined' error, make sure
+you are in the `easeconv` directory before compiling `easeconv.pro`!
+
 Two main functions are defined exposed by compiling `easeconv.pro`:
 `ease_convert` and `ease_inverse`. All other functions are support routines for
 these top-level functions.
