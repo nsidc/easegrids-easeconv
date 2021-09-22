@@ -44,7 +44,7 @@ Licensed for use by: University of Colorado - Boulder (MAIN)
 IDL>
 ```
 
-Next, compile `easeconv/easeconv.pro` with the `.RUN` command:
+Next, compile `easeconv.pro` with the `.RUN` command:
 
 ```
 IDL> .RUN easeconv.pro
